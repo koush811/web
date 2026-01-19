@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 5000px;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.top.scrolled{
+    background-color: rgb(255, 255, 255);
+}
+
+.btn.scrolled{
+    color: black;
+}
+
+.logo.scrolled{
+    color: black;
+}
+
+.none.scrolled{
+    background-color: black;
+    color: white;
+}
+
+.top div ,h1 ,p{
+    color: white;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.top .btns{
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn:hover{
+    border-bottom: solid 2px blue ;
+    display: inline-block;
+}
+
+.btns button{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.none{
+    border: none;
+}
+
+.none:hover{
+    background-color: rgb(0, 106, 255);
+    color: white;
+}
+
+header img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+header .content{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 490px;
+    transform: translate(0%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.cir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 73, 73);
+    width: 250px;
+    padding: 10px;
+    border-radius: 44px;
+    border: solid 1px gray;
+}
+
+.serch{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    margin-right: 10px;
+}
+
+.serch:hover{
+    background-color: white;
+    color: black;
+}
+
+.mission{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: solid 1px white;
+}
+
