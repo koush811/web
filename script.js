@@ -21,3 +21,10 @@ window.addEventListener('scroll',()=>{
         })
     }
 })
+
+const mission = document.querySelector('mission')
+
+document.addEventListener('click',()=>{
+    
+})
+
