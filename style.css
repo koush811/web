@@ -97,10 +97,19 @@ header{
     color: white;
 }
 
-img{
+.img-wrap{
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    background-color: black;
+}
+
+.mainimg{
+    width: 100%;
+    height: 100%;
+    
+    opacity: .5;
+    
 }
 
 .content{
@@ -148,11 +157,20 @@ img{
 .mission-content{
     background-color: white;
     color: black;
-    display: block;
     position: fixed;
+    display: none;
+    border-radius: 30px;
     top: 50%;
     left: 50%;
     width: 300px;
     height: 300px;
-    transform: translate(-50% -50%);
+    transform: translate(-50% ,-50%);
+}
+
+.mission-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

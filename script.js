@@ -22,9 +22,14 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-const mission = document.querySelector('mission')
+const missionbtn = document.querySelector('.mission')
+const mission = document.querySelector('.mission-content')
+const closebtn = document.querySelector('.close')
 
-document.addEventListener('click',()=>{
-    
+missionbtn.addEventListener('click',()=>{
+    mission.style.display = "block"
+})
+closebtn.addEventListener('click',()=>{
+    mission.style.display = "none"
 })
 
