@@ -224,10 +224,43 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
+}
+
+.belt{
+    position: relative;
+    display: flex;
+    width: 100%;
 }
 
 .move{
-    color: gray;
+    color: #808080;
+    width: max-content;
+    display: flex;
+    position: absolute;
+    left: 0;
+    animation: move 12s linear infinite;
 }
+
+.move.clone{
+    animation-delay: -6s;
+}
+
+.move img{
+    flex-shrink: 0;
+    height: 40px;
+    padding: 0 80px;
+    
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
 
 
