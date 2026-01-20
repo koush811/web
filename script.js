@@ -1,8 +1,11 @@
 const topel = document.querySelector('.top');
 const none = document.querySelector('.none')
 
-window.addEventListener('scroll',()=>{
-    if(window.scrollY > 1){
+window.addEventListener('scroll',updateheader)
+window.addEventListener('load',updateheader)
+
+function updateheader(){
+    if(window.scrollY > 0){
         topel.classList.add('scrolled')
         none.classList.add('scrolled')
         
@@ -10,7 +13,7 @@ window.addEventListener('scroll',()=>{
         topel.classList.remove('scrolled')
         none.classList.remove('scrolled')
     }
-})
+}
 
 
 const content = document.querySelector('.mission-content')
