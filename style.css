@@ -308,7 +308,7 @@ header{
     border-radius: 10px;    
 }
 
-.inner-content.field-content:hover{
+.inner-content:hover{
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -317,7 +317,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     padding: 20px;
-    height: 150px;
+    height: 200px;
 }
 
 .inner-content img{
@@ -329,11 +329,6 @@ header{
     border-top-right-radius:10px;
 }
 
-.inner-content p{
-    font-weight: lighter;
-    font-size: 80%;
-}
-
 /*インサイト*/
 .insite{
     padding: 0px 5%;
@@ -341,7 +336,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    height: 800px;
+    height: 700px;
 }
 
 .insite-contents{
@@ -363,8 +358,13 @@ header{
     border-radius: 10px;
 }
 
+/*フォーム*/
+
 .form{
     width: 100%;
     height: 300px;
-    background-color: #c5c5c5;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-around;
+    
 }
