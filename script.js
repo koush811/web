@@ -18,13 +18,16 @@ function updateheader(){
 
 const content = document.querySelector('.mission-content')
 const wrap = document.querySelector('.wrap')
+const body = document.querySelector('body')
 function Open(){
     content.classList.add('open')
     wrap.classList.add('open')
+    body.style.overflow = "hidden"
 }
 function Close(){
     content.classList.remove('open')
     wrap.classList.remove('open')
+    body.style.overflow = ""
 }
 
 

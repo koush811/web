@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onclick="Close">
     <header>
         <div class="top">
             <div class="logo">VANTAGE</div>
@@ -30,9 +30,11 @@
                 <button class="mission" onclick="Open()">ミッション</button>
             </div>
         </div>
-        <div class="wrap">
+        <div class="wrap" onclick="Close()">
             <div class="mission-content">
             <div class="mission-text">
+                <h2>私たちのミッション</h2>
+                <p></p>
                 <button class="close" onclick="Close()">閉じる</button>
             </div>
         </div>
@@ -119,8 +121,8 @@
                 </div>
             
         </div>
-        <div>
-            
+        <div class="insite">
+            <h2>最新のインサイト</h2>
         </div>
     </main>
     <footer></footer>
