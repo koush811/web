@@ -38,12 +38,20 @@ header {
     background-color: rgba(0, 0, 0, 0);
     z-index: 100;
     transition: .2s;
-    color: white;
+    
+}
+
+.logo,.btn{
+    color: rgb(255, 255, 255);
 }
 
 .top.scrolled {
     background-color: rgba(255, 255, 255);
-    color: black;
+}
+
+.top.scrolled .logo,
+.top.scrolled .btn{
+    color: rgb(0, 0, 0);
 }
 
 
@@ -67,7 +75,7 @@ header {
 }
 
 .btn {
-    color: black;
+    
     position: relative;
     display: inline-block;
     text-decoration: none;
