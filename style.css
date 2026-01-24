@@ -1,30 +1,30 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 
-body{
+body {
     height: auto;
-    
+
 }
 
-p{
-   
-   font-weight: 300 !important;
-   font-size: 110%;
-   color: #4f4f4f;
+p {
+
+    font-weight: 300 !important;
+    font-size: 110%;
+    color: #4f4f4f;
 }
 
 /*header*/
 
-header{
+header {
     width: 100%;
     height: auto;
     position: relative;
 }
 
-.top{
+.top {
     width: 100%;
     height: 100px;
     display: flex;
@@ -38,23 +38,23 @@ header{
     color: white;
 }
 
-.top.scrolled{
+.top.scrolled {
     background-color: rgba(255, 255, 255);
     color: black;
 }
 
 
-.none.scrolled{
+.none.scrolled {
     background-color: black;
     color: white;
 }
 
-.logo{
+.logo {
     font-weight: bold;
     font-size: 120%;
 }
 
-.top .btns{
+.top .btns {
     right: 0;
     display: flex;
     justify-content: space-around;
@@ -69,7 +69,7 @@ header{
     text-decoration: none;
 }
 
-.btn::after{
+.btn::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -81,36 +81,36 @@ header{
     transform: translateX(-50%);
 }
 
-.btn:hover::after{
+.btn:hover::after {
     width: 100%;
 }
 
-.btns button{
+.btns button {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.none{
+.none {
     border: none;
 }
 
-.none:hover{
+.none:hover {
     background-color: rgb(0, 106, 255);
     color: white;
 }
 
 /*トップイメージのところ*/
 
-.mainimg{
+.mainimg {
     width: 100%;
     height: 100vh;
-    
+
     filter: brightness(50%);
-    
+
 }
 
-.content{
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -123,7 +123,7 @@ header{
     height: 300px;
 }
 
-.cir{
+.cir {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,19 +134,19 @@ header{
     border: solid 1px gray;
 }
 
-.serch{
+.serch {
     background-color: rgb(0, 140, 255);
     color: white;
     margin-right: 10px;
     border: none;
 }
 
-.serch:hover{
+.serch:hover {
     background-color: white;
     color: black;
 }
 
-.wrap{
+.wrap {
     display: none;
     position: absolute;
     top: 0;
@@ -156,17 +156,17 @@ header{
     z-index: 100;
 }
 
-.wrap.open{
+.wrap.open {
     display: block;
 }
 
-.mission{
+.mission {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: solid 1px white;
 }
 
-.mission-content{
+.mission-content {
     display: none;
     background-color: white;
     color: black;
@@ -176,15 +176,15 @@ header{
     left: 50%;
     width: 50%;
     height: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     padding: 30px 60px;
 }
 
-.mission-content.open{
+.mission-content.open {
     display: block;
 }
 
-.mission-text{
+.mission-text {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -194,45 +194,46 @@ header{
 
 /*私たちについてのところ*/
 
-.about{
+.about {
     display: flex;
     justify-content: space-around;
     margin: 50px 5%;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 40%;
 }
-.right{
+
+.right {
     width: 50%;
 }
 
-.number{
+.number {
     width: 80%;
     display: flex;
     justify-content: space-between;
 }
 
-.blue{
+.blue {
     color: rgb(0, 119, 255);
 }
 
-.big{
+.big {
     font-weight: bold;
     font-size: 200%;
 }
 
-.about img{
+.about img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
 }
 
 /*ベルトコンベアみたいなやつ*/
-.move-content{
+.move-content {
     width: 100%;
     height: 150px;
     display: flex;
@@ -243,13 +244,13 @@ header{
     margin: 30px 0px;
 }
 
-.belt{
+.belt {
     position: relative;
     display: flex;
     width: 100%;
 }
 
-.move{
+.move {
     color: #808080;
     width: max-content;
     display: flex;
@@ -258,22 +259,23 @@ header{
     animation: move 40s linear infinite;
 }
 
-.move.clone{
+.move.clone {
     animation-delay: -20s;
 }
 
-.move img{
+.move img {
     flex-shrink: 0;
     height: 40px;
     padding: 0 80px;
-    
+
 }
 
-@keyframes move{
-    0%{
+@keyframes move {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
@@ -290,29 +292,29 @@ header{
     background-color: rgb(231, 231, 231);
 }
 
-.contents{
+.contents {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.text{
+.text {
     width: 100%;
-    
+
 }
 
-.inner-content{
-    width:30%;
+.inner-content {
+    width: 30%;
     height: 500px;
     background-color: white;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-.inner-content:hover{
+.inner-content:hover {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
-.inner-text{
+.inner-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -320,17 +322,17 @@ header{
     height: 200px;
 }
 
-.inner-content img{
+.inner-content img {
     object-fit: cover;
     width: 100%;
     height: 300px;
     overflow: hidden;
     border-top-left-radius: 10px;
-    border-top-right-radius:10px;
+    border-top-right-radius: 10px;
 }
 
 /*インサイト*/
-.insite{
+.insite {
     padding: 0px 5%;
     display: flex;
     flex-direction: column;
@@ -339,17 +341,17 @@ header{
     height: 700px;
 }
 
-.insite-contents{
+.insite-contents {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.insite-content{
+.insite-content {
     width: 30%;
 }
 
-.insite-content img{
+.insite-content img {
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -359,17 +361,17 @@ header{
 
 /*フォーム*/
 
-.form{
+.form {
     width: 100%;
     height: 500px;
     background-color: rgb(231, 231, 231);
     display: flex;
-    
+
     justify-content: space-around;
     padding: 30px;
 }
 
-.form-content{
+.form-content {
     width: 30%;
     height: 60%;
     display: flex;
@@ -377,25 +379,25 @@ header{
     justify-content: space-around;
 }
 
-.form-content.right{
+.form-content.right {
     height: 100%;
     width: 50%;
     align-items: center;
 }
 
-.a{
+.a {
     display: flex;
     align-items: center;
 }
 
-.mark{
+.mark {
     border-radius: 50%;
     background-color: gainsboro;
     padding: 5px;
     margin-right: 5px;
 }
 
-.form-area{
+.form-area {
     background-color: white;
     border-radius: 5px;
     width: 70%;
@@ -407,32 +409,38 @@ header{
     padding: 30px;
 }
 
-.dev{
+.dev {
     width: 100%;
 }
 
-.form-area input{
+.form-area input {
     border: solid 1px rgb(187, 185, 185);
     width: 100%;
 }
 
-.form-area input.big{
+.form-area input.big {
     padding-bottom: 150px;
     font-size: 80%;
 }
 
-.form-area button{
+.form-area button {
     width: 100%;
     background-color: black;
     color: white;
     padding: 10px 0;
     border-radius: 10px;
+    border: none;
+    transition: .2s;
+}
+
+.form-area button:hover {
+    background-color: rgb(0, 81, 255);
 }
 
 
 
 /*フッター*/
-footer{
+footer {
     background-color: black;
     height: 250px;
 }
