@@ -16,6 +16,8 @@ function updateheader() {
 }
 
 const logo = document.querySelector('.logo')
+const targetabout = document.getElementById('about')
+const targetform = document.getElementById('form')
 
 logo.addEventListener('click', (e) => {
   e.preventDefault()
@@ -23,6 +25,18 @@ logo.addEventListener('click', (e) => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
   document.documentElement.scrollTop = 0
   document.body.scrollTop = 0
+})
+
+document.querySelector('.none').addEventListener('click', ()=>{
+    targetform.scrollIntoView({
+        behavior: 'smooth'
+    })
+})
+
+document.querySelector('.serch').addEventListener('click',()=>{
+    targetabout.scrollIntoView({
+        behavior: 'smooth'
+    })
 })
 
 const content = document.querySelector('.mission-content')
@@ -72,9 +86,7 @@ formbtn.addEventListener('click', () => {
                 input.value = ""
             })
         },3000)
-    }
-
-    
+    }    
 })
 
 
