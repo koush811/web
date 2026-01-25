@@ -15,7 +15,7 @@ body {
 p {
 
     font-weight: 300 !important;
-    font-size: 110%;
+    font-size: 90%;
     color: #4f4f4f;
 }
 
@@ -405,8 +405,13 @@ header {
 .mark {
     border-radius: 50%;
     background-color: gainsboro;
-    padding: 5px;
+    padding: 10px;
     margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-area {
@@ -456,5 +461,57 @@ header {
 /*フッター*/
 footer {
     background-color: black;
-    height: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding:  50px;
+    width: 80%;
+}
+
+.footer-content{
+    width: 20%;
+    
+}
+
+footer h3{
+    color: white;
+}
+
+footer p{
+    padding: 20px 0px;
+}
+
+.hover:hover{
+    color: white;
+    transition: .2s;
+}
+
+.marks{
+    margin-top: 20px;
+    display: flex;
+}
+
+.gray{
+    background-color: #353535;
+}
+
+.gray:hover{
+    background-color: rgb(0, 89, 255);
+    transform: translateY(-10%);
+    transition: .2s;
+}
+
+.bottom{
+    width: calc(80% - 100px); /* 左右50pxずつ */
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px  #4f4f4f;
+    
 }
