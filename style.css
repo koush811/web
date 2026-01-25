@@ -19,6 +19,10 @@ p {
     color: #4f4f4f;
 }
 
+button{
+    cursor: pointer;
+}
+
 /*header*/
 
 header {
@@ -63,6 +67,7 @@ header {
 .logo {
     font-weight: bold;
     font-size: 120%;
+    text-decoration: none;
 }
 
 .top .btns {
@@ -89,7 +94,7 @@ header {
     width: 0;
     height: 2px;
     transition: width .3s ease;
-    background-color: blue;
+    background-color: rgb(0, 89, 255);
     transform: translateX(-50%);
 }
 
@@ -98,7 +103,7 @@ header {
 }
 
 .btns button {
-    padding: 10px;
+    padding: 15px 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -108,7 +113,7 @@ header {
 }
 
 .none:hover {
-    background-color: rgb(0, 106, 255);
+    background-color: rgb(0, 140, 255);
     color: white;
 }
 
@@ -146,11 +151,14 @@ header {
     border: solid 1px gray;
 }
 
+
+
 .serch {
     background-color: rgb(0, 140, 255);
     color: white;
     margin-right: 10px;
     border: none;
+    padding: 100px;
 }
 
 .serch:hover {
@@ -186,8 +194,8 @@ header {
     border-radius: 30px;
     top: 50%;
     left: 50%;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     transform: translate(-50%, -50%);
     padding: 30px 60px;
 }
@@ -202,6 +210,13 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.close{
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid .5px #4f4f4f;
 }
 
 /*私たちについてのところ*/
@@ -320,6 +335,7 @@ header {
     height: 500px;
     background-color: white;
     border-radius: 10px;
+    transition: .2s;
 }
 
 .inner-content:hover {

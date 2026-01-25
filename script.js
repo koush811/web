@@ -15,6 +15,15 @@ function updateheader() {
     }
 }
 
+const logo = document.querySelector('.logo')
+
+logo.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+  document.documentElement.scrollTop = 0
+  document.body.scrollTop = 0
+})
 
 const content = document.querySelector('.mission-content')
 const wrap = document.querySelector('.wrap')
