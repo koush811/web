@@ -34,6 +34,8 @@ const inputs = document.querySelectorAll('input')
 const formbtn = document.querySelector('.formbtn')
 const adress = document.getElementById('adress')
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 formbtn.addEventListener('click', () => {
     let isChecked = true
     inputs.forEach(input => {
@@ -45,7 +47,7 @@ formbtn.addEventListener('click', () => {
         }
     });
 
-    if (!adress.value.includes('@')) {
+    if (!emailRegex.test(adress.value)) {
         console.log("none")
         adress.style.borderColor = "red"
         isChecked = false
@@ -54,15 +56,16 @@ formbtn.addEventListener('click', () => {
     if(isChecked){
         formbtn.style.backgroundColor = "green"
         formbtn.textContent = "送信完了！"
+        setTimeout(()=>{
+            formbtn.style.backgroundColor = "black"
+            formbtn.textContent = "送信"
+            inputs.forEach(input => {
+                input.value = ""
+            })
+        },3000)
     }
 
-    setTimeout(()=>{
-        formbtn.style.backgroundColor = "black"
-        formbtn.textContent = "送信"
-        inputs.forEach(input => {
-            input.value = ""
-        })
-    },3000)
+    
 })
 
 
