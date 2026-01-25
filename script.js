@@ -35,18 +35,34 @@ const formbtn = document.querySelector('.formbtn')
 const adress = document.getElementById('adress')
 
 formbtn.addEventListener('click', () => {
+    let isChecked = true
     inputs.forEach(input => {
         if (input.value === "") {
             input.style.borderColor = "red"
+            isChecked = false
         } else {
             input.style.borderColor = "rgb(187, 185, 185)"
         }
     });
+
     if (!adress.value.includes('@')) {
         console.log("none")
         adress.style.borderColor = "red"
-
+        isChecked = false
     }
+
+    if(isChecked){
+        formbtn.style.backgroundColor = "green"
+        formbtn.textContent = "送信完了！"
+    }
+
+    setTimeout(()=>{
+        formbtn.style.backgroundColor = "black"
+        formbtn.textContent = "送信"
+        inputs.forEach(input => {
+            input.value = ""
+        })
+    },3000)
 })
 
 
