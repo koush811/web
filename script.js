@@ -1,5 +1,6 @@
 const topel = document.querySelector('.top');
 const none = document.querySelector('.none')
+const borders = document.querySelectorAll('.border')
 
 window.addEventListener('scroll', updateheader)
 window.addEventListener('load', updateheader)
@@ -8,10 +9,16 @@ function updateheader() {
     if (window.scrollY > 0) {
         topel.classList.add('scrolled')
         none.classList.add('scrolled')
+        borders.forEach(border => {
+            border.classList.add('scrolled')
+        });
 
     } else {
         topel.classList.remove('scrolled')
         none.classList.remove('scrolled')
+        borders.forEach(border => {
+            border.classList.remove('scrolled')
+        });
     }
 }
 
@@ -88,6 +95,10 @@ formbtn.addEventListener('click', () => {
         },3000)
     }    
 })
+
+
+
+
 
 
 
