@@ -96,6 +96,18 @@ formbtn.addEventListener('click', () => {
     }    
 })
 
+const input = document.getElementById('input');
+const hidebtns = document.querySelector('.hidebtns');
+
+input.addEventListener('change', ()=> {
+    if (input.checked) {
+        hidebtns.style.transform = 'translateX(0)';
+    } else {
+        hidebtns.style.transform = 'translateX(-100%)';
+    }
+});
+
+
 
 
 
