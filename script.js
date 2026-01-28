@@ -127,7 +127,7 @@ hide_btns.forEach(hidebtn => {
 
 
 const hide_input = document.getElementById('input');
-const hidebtnsBtns = document.querySelectorAll('.hidebtns .btn');
+const hidebtnsBtns = document.querySelectorAll('.hidebtns .hide-btn');
 
 hidebtnsBtns.forEach(btn => {
     btn.addEventListener('click', () => {
