@@ -8,8 +8,8 @@ html{
 }
 
 p {
-    font-weight: 300 !important;
-    font-size: 90%;
+    font-weight: 400 !important;
+    font-size: 110%;
     color: #747474;
 }
 
@@ -585,6 +585,14 @@ footer p{
         width: 100%;
     }
 
+    .top .btns{
+        display: none;
+    }
+
+    .btn{
+        color: black;
+    }
+
     .hidebtns{
         display: flex;
         position: fixed;
@@ -598,14 +606,10 @@ footer p{
         transition: .3s;
         z-index: 99;
         padding: 20px;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .hidentns.active{
-        transform: translateX(0%);
+       
         
+        z-index: 1000;
     }
-
     
     .hide{
         display: block;

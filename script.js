@@ -98,14 +98,35 @@ formbtn.addEventListener('click', () => {
 
 const input = document.getElementById('input');
 const hidebtns = document.querySelector('.hidebtns');
+const btns = document.querySelector('.btns')
 
 input.addEventListener('change', ()=> {
     if (input.checked) {
         hidebtns.style.transform = 'translateX(0)';
+        topel.classList.add('scrolled')
+        none.classList.add('scrolled')
+        borders.forEach(border => {
+            border.classList.add('scrolled')
+        });
+        
     } else {
-        hidebtns.style.transform = 'translateX(-100%)';
+        hidebtns.style.transform = 'translateX(100%)';
+        /*topel.classList.remove('scrolled')
+        none.classList.remove('scrolled')
+        borders.forEach(border => {
+            border.classList.remove('scrolled')
+        });*/
     }
 });
+
+const hide_btns = document.querySelectorAll('.hide-btn')
+
+hide_btns.forEach(hidebtn => {
+    hidebtn.addEventListener('click',()=>{
+        hidebtns.style.transform = 'translateX(100%)'
+    })
+});
+
 
 
 
