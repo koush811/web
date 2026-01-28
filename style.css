@@ -580,6 +580,14 @@ footer p{
         
     }
 
+    body:has(#input:checked) {
+        overflow: hidden;
+    }
+
+    a{
+        color: black;
+    }
+
     .top{
         padding: 0 15px;
         width: 100%;
@@ -599,16 +607,17 @@ footer p{
         width: 100vw;
         height: 100vh;
         left: 0;
-        top: 100px;
+        top: 0;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         transform: translateX(100%);
         transition: .3s;
-        z-index: 99;
+        z-index: 10;
         padding: 20px;
-       
+        gap: 50px;
         
-        z-index: 1000;
     }
     
     .hide{
@@ -629,7 +638,7 @@ footer p{
     }
 
     .content{
-        
+        height: 400px;
         width: 95%;
         
     }
@@ -678,7 +687,8 @@ footer p{
     }
 
     .text{
-        min-height: 200px;
+        margin: 20px 0px;
+        height: auto;
     }
 
     .left,.right,.inner-content,.insite-content,.form-content,.footer-content{

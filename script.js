@@ -2,6 +2,7 @@ const topel = document.querySelector('.top');
 const none = document.querySelector('.none')
 const borders = document.querySelectorAll('.border')
 
+
 window.addEventListener('scroll', updateheader)
 window.addEventListener('load', updateheader)
 
@@ -111,20 +112,27 @@ input.addEventListener('change', ()=> {
         
     } else {
         hidebtns.style.transform = 'translateX(100%)';
-        /*topel.classList.remove('scrolled')
-        none.classList.remove('scrolled')
-        borders.forEach(border => {
-            border.classList.remove('scrolled')
-        });*/
     }
 });
 
 const hide_btns = document.querySelectorAll('.hide-btn')
 
+
 hide_btns.forEach(hidebtn => {
     hidebtn.addEventListener('click',()=>{
         hidebtns.style.transform = 'translateX(100%)'
+        
     })
+});
+
+
+const hide_input = document.getElementById('input');
+const hidebtnsBtns = document.querySelectorAll('.hidebtns .btn');
+
+hidebtnsBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        hide_input.checked = false;
+    });
 });
 
 
