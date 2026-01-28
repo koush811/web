@@ -4,7 +4,6 @@ const topel = document.querySelector('.top');
 const none = document.querySelector('.none')
 const borders = document.querySelectorAll('.border')
 
-
 window.addEventListener('scroll', updateheader)
 window.addEventListener('load', updateheader)
 
@@ -38,7 +37,7 @@ logo.addEventListener('click', (e) => {
   document.body.scrollTop = 0
 })
 
-//buton要素のスクロール移動
+//button要素のスクロール移動
 document.querySelector('.none').addEventListener('click', ()=>{
     targetform.scrollIntoView({
         behavior: 'smooth'

@@ -123,8 +123,11 @@ header {
     transform: translateX(-50%);
 }
 
-.btn:hover::after {
-    width: 100%;
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover::after {
+        width: 100%;
+    }
+    
 }
 
 /*headerのbuttonとcontent内のbutton*/
@@ -224,10 +227,13 @@ header {
     border: none;
 }
 
-.serch:hover {
+@media (hover: hover) and (pointer: fine) {
+    .serch:hover {
     background-color: white;
     color: black;
+    }
 }
+
 
 /*mission表示時の背景*/
 
@@ -663,7 +669,6 @@ footer p{
     .content{
         height: 45%;
         width: 95%;
-        
     }
 
     .mission-content{
@@ -738,5 +743,16 @@ footer p{
     }
     .bottom{
         width: 90%;
+    }
+
+    /*hover→active*/
+
+    .serch:active {
+        background-color: white;
+        color: black;
+    }
+
+    .btn:active::after {
+        width: 100%;
     }
 }
