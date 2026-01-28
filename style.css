@@ -159,19 +159,19 @@ header {
 .one{
     top: 60%;
     transform: translateX(-50%);
-    right: 5%;
+    right: 0;
 }
 
 .two{
     top: 50%;
     transform: translateX(-50%);
-    right: 5%;
+    right: 0;
 }
 
 .three{
     top: 40%;
     transform: translateX(-50%);
-    right: 5%;
+    right: 0;
 }
 
 /*初期状態は隠す*/
@@ -491,6 +491,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0; /*markが縮まないようにする*/
 }
 
 .form-area {
@@ -577,6 +578,7 @@ footer p{
 
 .gray{
     background-color: #353535;
+    color: black;
 }
 
 .gray:hover{
