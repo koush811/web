@@ -1,3 +1,5 @@
+//スクロール時にclassをつける
+
 const topel = document.querySelector('.top');
 const none = document.querySelector('.none')
 const borders = document.querySelectorAll('.border')
@@ -23,6 +25,7 @@ function updateheader() {
     }
 }
 
+/*logoが押されたときにページトップに移動*/
 const logo = document.querySelector('.logo')
 const targetabout = document.getElementById('about')
 const targetform = document.getElementById('form')
@@ -35,6 +38,7 @@ logo.addEventListener('click', (e) => {
   document.body.scrollTop = 0
 })
 
+//buton要素のスクロール移動
 document.querySelector('.none').addEventListener('click', ()=>{
     targetform.scrollIntoView({
         behavior: 'smooth'
@@ -47,6 +51,7 @@ document.querySelector('.serch').addEventListener('click',()=>{
     })
 })
 
+//missionの関数
 const content = document.querySelector('.mission-content')
 const wrap = document.querySelector('.wrap')
 const body = document.querySelector('body')
@@ -61,6 +66,7 @@ function Close() {
     body.style.overflow = ""
 }
 
+//formの制御　スタイル変更
 const inputs = document.querySelectorAll('input')
 const formbtn = document.querySelector('.formbtn')
 const adress = document.getElementById('adress')
@@ -97,6 +103,7 @@ formbtn.addEventListener('click', () => {
     }    
 })
 
+//hidebtnsの表示、非表示　スタイル変更
 const input = document.getElementById('input');
 const hidebtns = document.querySelector('.hidebtns');
 const btns = document.querySelector('.btns')
@@ -115,8 +122,9 @@ input.addEventListener('change', ()=> {
     }
 });
 
-const hide_btns = document.querySelectorAll('.hide-btn')
 
+const hide_input = document.getElementById('input');
+const hide_btns = document.querySelectorAll('.hidebtns .hide-btn');
 
 hide_btns.forEach(hidebtn => {
     hidebtn.addEventListener('click',()=>{
@@ -125,11 +133,9 @@ hide_btns.forEach(hidebtn => {
     })
 });
 
+/*hidebtnを押したときにcheckboxをfalseにして非表示にする*/
 
-const hide_input = document.getElementById('input');
-const hidebtnsBtns = document.querySelectorAll('.hidebtns .hide-btn');
-
-hidebtnsBtns.forEach(btn => {
+hide_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         hide_input.checked = false;
     });
