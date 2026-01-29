@@ -67,7 +67,6 @@ header {
     transition: .2s;
 }
 
-
 /*スクロール時*/
 
 .top.scrolled {
@@ -343,40 +342,38 @@ header {
 }
 
 .belt {
-    position: relative;
-    display: flex;
     width: 100%;
+    height: 50px;
+    overflow: hidden;
     margin: 30px 0;
 }
 
-.move {
-    color: #808080;
-    width: max-content;
+.track{
     display: flex;
-    position: absolute;
-    left: 0;
-    animation: move 40s linear infinite;
+    width: max-content;
+    animation: move 10s linear infinite;
 }
 
-.move.clone {
-    animation-delay: -20s;
+.move {
+    display: flex;
+    align-items: center;
 }
 
 .move img {
-    flex-shrink: 0;
     height: 40px;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 @keyframes move {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
+
 
 /*専門分野*/
 
@@ -667,7 +664,7 @@ footer p{
     }
 
     .content{
-        height: 45%;
+        height: 60%;
         width: 95%;
     }
 
@@ -756,3 +753,5 @@ footer p{
         width: 100%;
     }
 }
+
+/*width250px以下の画面幅だとhidebtnsのスタイルが崩れる*/

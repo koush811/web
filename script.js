@@ -117,7 +117,7 @@ input.addEventListener('change', ()=> {
         });
         
     } else {
-        hidebtns.style.transform = 'translateX(100%)';
+        hidebtns.style.transform = 'translateX(100vw)';
     }
 });
 
@@ -127,7 +127,7 @@ const hide_btns = document.querySelectorAll('.hidebtns .hide-btn');
 
 hide_btns.forEach(hidebtn => {
     hidebtn.addEventListener('click',()=>{
-        hidebtns.style.transform = 'translateX(100%)'
+        hidebtns.style.transform = 'translateX(100vw)'
         
     })
 });
