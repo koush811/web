@@ -134,6 +134,7 @@ header {
     padding: 15px 20px;
     border-radius: 10px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .none {
@@ -156,6 +157,7 @@ header {
     width: 30px;
     height: 5px;
     background-color: white;
+    transition: .5s;
 }
 
 .one{
@@ -174,6 +176,24 @@ header {
     top: 40%;
     transform: translateX(-50%);
     right: 0;
+}
+
+#input:checked + label .one{
+    transform: rotate(45deg);
+    top: 50%;
+    right: 10px;
+}
+
+#input:checked + label .two{
+    transform: rotate(-45deg);
+    top: 50%;
+    right: 10px;
+}
+
+#input:checked + label .three{
+    transform: rotate(45deg);
+    top: 50%;
+    right: 10px;
 }
 
 /*初期状態は隠す*/
@@ -243,7 +263,7 @@ header {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.594);
     z-index: 100;
 }
 
@@ -271,6 +291,7 @@ header {
     height: 40%;
     transform: translate(-50%, -50%);
     padding: 30px 60px;
+    z-index: 100000
 }
 
 .mission-content.open {
@@ -351,12 +372,13 @@ header {
 .track{
     display: flex;
     width: max-content;
-    animation: move 10s linear infinite;
+    animation: move 15s linear infinite;
 }
 
 .move {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .move img {
@@ -541,7 +563,7 @@ header {
 
 /*フッター*/
 footer {
-    background-color: black;
+    background-color: rgb(31, 31, 39);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -754,4 +776,19 @@ footer p{
     }
 }
 
-/*width250px以下の画面幅だとhidebtnsのスタイルが崩れる*/
+.topbtn{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 50%;
+    padding: 50px;
+    border: solid .5px black;
+    display: none;
+    cursor: pointer;
+}
+
+.topbtn.scrolled{
+    display: block;
+}

@@ -14,6 +14,7 @@ function updateheader() {
         borders.forEach(border => {
             border.classList.add('scrolled')
         });
+        topbtn.classList.add('scrolled')
 
     } else {
         topel.classList.remove('scrolled')
@@ -21,6 +22,7 @@ function updateheader() {
         borders.forEach(border => {
             border.classList.remove('scrolled')
         });
+        topbtn.classList.remove('scrolled')
     }
 }
 
@@ -54,6 +56,7 @@ document.querySelector('.serch').addEventListener('click',()=>{
 const content = document.querySelector('.mission-content')
 const wrap = document.querySelector('.wrap')
 const body = document.querySelector('body')
+
 function Open() {
     content.classList.add('open')
     wrap.classList.add('open')
@@ -115,7 +118,7 @@ input.addEventListener('change', ()=> {
         borders.forEach(border => {
             border.classList.add('scrolled')
         });
-        
+
     } else {
         hidebtns.style.transform = 'translateX(100vw)';
     }
@@ -139,6 +142,12 @@ hide_btns.forEach(btn => {
         hide_input.checked = false;
     });
 });
+
+const topbtn = document.querySelector('.topbtn')
+
+topbtn.addEventListener('click',()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' })    
+})
 
 
 
