@@ -253,6 +253,10 @@ header {
     }
 }
 
+.main-title {
+    font-size: 300%;
+    font-weight: bold;
+}
 
 /*mission表示時の背景*/
 
@@ -679,6 +683,10 @@ footer p{
     .cir{
         width: 80%;
         font-size: 80%;
+    }
+
+    .main-title{
+        font-size: 190%;
     }
 
     .big{
